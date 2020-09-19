@@ -1,0 +1,11 @@
+archdep_is_windows_nt.o: archdep_is_windows_nt.c \
+ /usr/include/stdc-predef.h archdep_defs.h ../../../src/vice.h \
+ ../../../src/config.h
+
+/usr/include/stdc-predef.h:
+
+archdep_defs.h:
+
+../../../src/vice.h:
+
+../../../src/config.h:

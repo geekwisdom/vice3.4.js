@@ -1,0 +1,20 @@
+hs-unix-pci.o: hs-unix-pci.c ../../src/vice.h ../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h
+
+../../src/vice.h:
+
+../../src/config.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:

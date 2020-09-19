@@ -1,0 +1,10 @@
+c128memlimit.o: c128memlimit.c /usr/include/stdc-predef.h \
+ ../../src/vice.h ../../src/config.h c128memlimit.h
+
+/usr/include/stdc-predef.h:
+
+../../src/vice.h:
+
+../../src/config.h:
+
+c128memlimit.h:

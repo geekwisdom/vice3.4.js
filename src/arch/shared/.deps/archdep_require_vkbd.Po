@@ -1,0 +1,13 @@
+archdep_require_vkbd.o: archdep_require_vkbd.c /usr/include/stdc-predef.h \
+ ../../../src/vice.h ../../../src/config.h archdep_defs.h \
+ archdep_require_vkbd.h
+
+/usr/include/stdc-predef.h:
+
+../../../src/vice.h:
+
+../../../src/config.h:
+
+archdep_defs.h:
+
+archdep_require_vkbd.h:

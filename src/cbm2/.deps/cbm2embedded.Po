@@ -1,0 +1,8 @@
+cbm2embedded.o: cbm2embedded.c /usr/include/stdc-predef.h \
+ ../../src/vice.h ../../src/config.h
+
+/usr/include/stdc-predef.h:
+
+../../src/vice.h:
+
+../../src/config.h:

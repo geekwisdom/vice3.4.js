@@ -1,0 +1,3 @@
+echo compiling js...
+cp src/xvic src/xvic.o
+emcc src/xvic.o  -O2 -o ../js/xvic.js -s DOUBLE_MODE=0 --embed-file "data/VIC20@/VIC20" --embed-file "data/DRIVES@/DRIVES" --embed-file "data/fonts@/fonts"

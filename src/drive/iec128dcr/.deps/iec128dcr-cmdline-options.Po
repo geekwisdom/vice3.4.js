@@ -1,0 +1,32 @@
+iec128dcr-cmdline-options.o: iec128dcr-cmdline-options.c \
+  ../../../src/vice.h ../../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
+  ../../../src/cmdline.h iec128dcr-cmdline-options.h
+
+../../../src/vice.h:
+
+../../../src/config.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
+
+../../../src/cmdline.h:
+
+iec128dcr-cmdline-options.h:

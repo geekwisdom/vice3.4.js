@@ -1,0 +1,273 @@
+plus4exp-resources.o: plus4exp-resources.c ../../../../src/vice.h \
+  ../../../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
+  ../../../../src/drive/drive.h ../../../../src/types.h \
+  ../../../../src/vice_sdl.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_main.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_stdinc.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_platform.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/begin_code.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/close_code.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdarg.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdarg.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_assert.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_atomic.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_audio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_error.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_endian.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mutex.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_thread.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rwops.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_clipboard.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_cpuinfo.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_events.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_video.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_pixels.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rect.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_surface.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_blendmode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keyboard.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keycode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_scancode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mouse.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_joystick.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gamecontroller.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_quit.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gesture.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_touch.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_filesystem.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_haptic.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_hints.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_loadso.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_log.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_messagebox.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_power.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_render.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_sensor.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_shape.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_system.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_timer.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_version.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h \
+  ../../../../src/rtc/ds1216e.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/time.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/time.h \
+  ../../../../src/snapshot.h ../../../../src/lib/p64/p64.h \
+  ../../../../src/lib/p64/p64config.h ../../../../src/lib.h \
+  ../../../../src/debug.h ../../../../src/drive/drivetypes.h \
+  ../../../../src/mos6510.h ../../../../src/r65c02.h \
+  ../../../../src/drive/drivemem.h plus4exp-resources.h \
+  ../../../../src/resources.h
+
+../../../../src/vice.h:
+
+../../../../src/config.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
+
+../../../../src/drive/drive.h:
+
+../../../../src/types.h:
+
+../../../../src/vice_sdl.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_main.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_stdinc.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_config.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_platform.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/begin_code.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/close_code.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdarg.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdarg.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_assert.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_atomic.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_audio.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_error.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_endian.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mutex.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_thread.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rwops.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_clipboard.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_cpuinfo.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_events.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_video.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_pixels.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rect.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_surface.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_blendmode.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keyboard.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keycode.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_scancode.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mouse.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_joystick.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gamecontroller.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_quit.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gesture.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_touch.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_filesystem.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_haptic.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_hints.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_loadso.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_log.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_messagebox.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_power.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_render.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_sensor.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_shape.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_system.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_timer.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_version.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h:
+
+../../../../src/rtc/ds1216e.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/time.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/time.h:
+
+../../../../src/snapshot.h:
+
+../../../../src/lib/p64/p64.h:
+
+../../../../src/lib/p64/p64config.h:
+
+../../../../src/lib.h:
+
+../../../../src/debug.h:
+
+../../../../src/drive/drivetypes.h:
+
+../../../../src/mos6510.h:
+
+../../../../src/r65c02.h:
+
+../../../../src/drive/drivemem.h:
+
+plus4exp-resources.h:
+
+../../../../src/resources.h:
