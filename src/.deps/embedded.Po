@@ -1,6 +1,4 @@
-embedded.o: embedded.c /usr/include/stdc-predef.h vice.h config.h
-
-/usr/include/stdc-predef.h:
+embedded.o: embedded.c vice.h config.h
 
 vice.h:
 

@@ -1,17 +1,7 @@
-archdep_is_haiku.o: archdep_is_haiku.c /usr/include/stdc-predef.h \
- archdep_defs.h ../../../src/vice.h ../../../src/config.h \
- /usr/include/strings.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
-
-/usr/include/stdc-predef.h:
+archdep_is_haiku.o: archdep_is_haiku.c archdep_defs.h ../../../src/vice.h \
+  ../../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h
 
 archdep_defs.h:
 
@@ -19,24 +9,6 @@ archdep_defs.h:
 
 ../../../src/config.h:
 
-/usr/include/strings.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
 
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:

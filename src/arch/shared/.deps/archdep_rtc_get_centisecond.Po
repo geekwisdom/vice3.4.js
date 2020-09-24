@@ -1,8 +1,6 @@
 archdep_rtc_get_centisecond.o: archdep_rtc_get_centisecond.c \
- /usr/include/stdc-predef.h ../../../src/vice.h ../../../src/config.h \
- archdep_defs.h archdep_rtc_get_centisecond.h
-
-/usr/include/stdc-predef.h:
+  ../../../src/vice.h ../../../src/config.h archdep_defs.h \
+  archdep_rtc_get_centisecond.h
 
 ../../../src/vice.h:
 

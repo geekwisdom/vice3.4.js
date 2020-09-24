@@ -224,12 +224,12 @@ CCAS = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emcc
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = 
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstrict-prototypes -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Wmacro-redefined -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths 
+CFLAGS = -s TOTAL_MEMORY=33554432 -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstrict-prototypes -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Wmacro-redefined -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths 
 CPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emcc -E
 CPPFLAGS = 
 CROSS = false
-CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11
-CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11 -E
+CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11 -s TOTAL_MEMORY=268435456
+CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -s TOTAL_MEMORY=268435456 -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths 
 CYGPATH_W = echo

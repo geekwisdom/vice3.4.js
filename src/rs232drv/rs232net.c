@@ -52,7 +52,7 @@
 
 #include "lib.h"
 #include "log.h"
-#include "rs232.h"
+#include "rs232z.h"
 #include "rs232net.h"
 #include "vicesocket.h"
 #include "types.h"
@@ -85,6 +85,9 @@ int rs232net_cmdline_options_init(void)
     return 0;
 }
 
+
+
+int rs232_useip232d[RS232_NUM_DEVICES];
 /* ------------------------------------------------------------------------- */
 
 typedef struct rs232net {
@@ -165,7 +168,7 @@ int rs232net_open(int device)
         }
 
         fds[i].inuse = 1;
-        fds[i].useip232 = rs232_useip232[device];
+        fds[i].useip232 = rs232_useip232d[device];
 
         index = i;
 

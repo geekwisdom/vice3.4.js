@@ -1,7 +1,5 @@
-menu_ethernetcart.o: menu_ethernetcart.c /usr/include/stdc-predef.h \
- ../../../src/vice.h ../../../src/config.h
-
-/usr/include/stdc-predef.h:
+menu_ethernetcart.o: menu_ethernetcart.c ../../../src/vice.h \
+  ../../../src/config.h
 
 ../../../src/vice.h:
 

@@ -1,7 +1,4 @@
-plus4embedded.o: plus4embedded.c /usr/include/stdc-predef.h \
- ../../src/vice.h ../../src/config.h
-
-/usr/include/stdc-predef.h:
+plus4embedded.o: plus4embedded.c ../../src/vice.h ../../src/config.h
 
 ../../src/vice.h:
 

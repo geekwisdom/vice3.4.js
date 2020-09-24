@@ -1,6 +1,4 @@
-rawnet.o: rawnet.c /usr/include/stdc-predef.h vice.h config.h
-
-/usr/include/stdc-predef.h:
+rawnet.o: rawnet.c vice.h config.h
 
 vice.h:
 

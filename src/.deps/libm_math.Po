@@ -1,6 +1,4 @@
-libm_math.o: libm_math.c /usr/include/stdc-predef.h vice.h config.h
-
-/usr/include/stdc-predef.h:
+libm_math.o: libm_math.c vice.h config.h
 
 vice.h:
 

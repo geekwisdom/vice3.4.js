@@ -1,7 +1,4 @@
-c64dtvembedded.o: c64dtvembedded.c /usr/include/stdc-predef.h \
- ../../src/vice.h ../../src/config.h
-
-/usr/include/stdc-predef.h:
+c64dtvembedded.o: c64dtvembedded.c ../../src/vice.h ../../src/config.h
 
 ../../src/vice.h:
 

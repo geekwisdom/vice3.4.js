@@ -31,7 +31,7 @@
 #include "lib.h"
 #include "resources.h"
 #include "rs232.h"
-#include "rs232drv.h"
+#include "rs232dev.h"
 #include "types.h"
 #include "util.h"
 

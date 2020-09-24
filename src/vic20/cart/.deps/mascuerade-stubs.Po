@@ -1,88 +1,39 @@
-mascuerade-stubs.o: mascuerade-stubs.c /usr/include/stdc-predef.h \
- ../../../src/vice.h ../../../src/config.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/libio.h \
- /usr/include/x86_64-linux-gnu/bits/_G_config.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h mascuerade-stubs.h
-
-/usr/include/stdc-predef.h:
+mascuerade-stubs.o: mascuerade-stubs.c ../../../src/vice.h \
+  ../../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  mascuerade-stubs.h
 
 ../../../src/vice.h:
 
 ../../../src/config.h:
 
-/usr/include/stdio.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h:
 
-/usr/include/features.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/libio.h:
-
-/usr/include/x86_64-linux-gnu/bits/_G_config.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
 
 mascuerade-stubs.h:

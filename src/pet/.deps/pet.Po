@@ -1,526 +1,279 @@
-pet.o: pet.c /usr/include/stdc-predef.h ../../src/vice.h \
- ../../src/config.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/x86_64-linux-gnu/bits/mathinline.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/libio.h \
- /usr/include/x86_64-linux-gnu/bits/_G_config.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h ../../src/attach.h \
- ../../src/types.h ../../src/vice.h ../../src/vice_sdl.h \
- /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
- /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
- /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
- /usr/include/SDL2/close_code.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h \
- /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
- /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
- /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h \
- /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h \
- /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/immintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/pmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/tmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/smmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/popcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/wmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512fintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512erintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512pfintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512cdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512bwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512dqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vlbwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vldqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512ifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512ifmavlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vbmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vbmivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx5124fmapsintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx5124vnniwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vpopcntdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/shaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/lzcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/bmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/bmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/fmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/f16cintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/rtmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/xtestintrin.h \
- /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_video.h \
- /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL_rect.h \
- /usr/include/SDL2/SDL_surface.h /usr/include/SDL2/SDL_blendmode.h \
- /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h \
- /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h \
- /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h \
- /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h \
- /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h \
- /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h \
- /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
- /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
- /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_shape.h \
- /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
- /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_keycode.h \
- /usr/include/SDL2/SDL_opengl.h /usr/include/SDL2/SDL_opengl_glext.h \
- ../../src/autostart.h ../../src/joyport/bbrtc.h ../../src/types.h \
- ../../src/cartio.h ../../src/clkguard.h ../../src/crtc/crtc-mem.h \
- ../../src/crtc/crtc.h ../../src/datasette.h ../../src/debug.h \
- debugcart.h ../../src/diskimage.h \
- ../../src/drive/drive-cmdline-options.h \
- ../../src/drive/drive-resources.h ../../src/drive/drive-snapshot.h \
- ../../src/drive/drive-sound.h ../../src/drive/drive.h \
- ../../src/rtc/ds1216e.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/snapshot.h ../../src/lib/p64/p64.h \
- ../../src/lib/p64/p64config.h ../../src/lib.h ../../src/debug.h \
- ../../src/drive/drivetypes.h ../../src/drive/drive.h ../../src/mos6510.h \
- ../../src/r65c02.h ../../src/fliplist.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h ../../src/fsdevice.h \
- ../../src/gfxoutput.h ../../src/iecdrive.h ../../src/init.h \
- ../../src/joyport/joyport.h ../../src/joyport/joystick.h \
- ../../src/kbdbuf.h ../../src/keyboard.h ../../src/log.h \
- ../../src/machine-drive.h ../../src/machine-printer.h \
- ../../src/machine-video.h ../../src/machine.h ../../src/maincpu.h \
- ../../src/mem.h ../../src/monitor.h ../../src/monitor/asm.h \
- ../../src/network.h ../../src/joyport/paperclip64.h ../../src/parallel.h \
- pet-cmdline-options.h pet-resources.h pet-snapshot.h pet.h petcolour.h \
- petiec.h petmem.h petreu.h petdww.h pethre.h pets.h petsound.h \
- ../../src/sound.h /usr/include/linux/soundcard.h \
- /usr/include/linux/ioctl.h /usr/include/x86_64-linux-gnu/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h /usr/include/linux/patchkey.h \
- /usr/include/x86_64-linux-gnu/sys/soundcard.h ../../src/petui.h petvia.h \
- petacia.h petpia.h ../../src/printer.h ../../src/resources.h \
- ../../src/rs232drv/rs232drv.h ../../src/samplerdrv/sampler.h \
- ../../src/joyport/sampler2bit.h ../../src/joyport/sampler4bit.h \
- ../../src/screenshot.h ../../src/sid/sid.h \
- ../../src/sid/sid-cmdline-options.h ../../src/sid/sid-resources.h \
- ../../src/sidcart.h ../../src/snapshot.h ../../src/tape.h \
- ../../src/tapeport/tapeport.h ../../src/traps.h ../../src/mem.h \
- ../../src/userport/userport.h ../../src/userport/userport_dac.h \
- ../../src/userport/userport_joystick.h \
- ../../src/userport/userport_rtc_58321a.h \
- ../../src/userport/userport_rtc_ds1307.h ../../src/util.h \
- ../../src/via.h ../../src/vice-event.h ../../src/video.h \
- ../../src/video/video-sound.h ../../src/viewport.h ../../src/vsync.h \
- ../../src/joyport/mouse.h
-
-/usr/include/stdc-predef.h:
+pet.o: pet.c ../../src/vice.h ../../src/config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h \
+  ../../src/attach.h ../../src/types.h ../../src/vice_sdl.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_main.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_stdinc.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_config.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_platform.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/begin_code.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/close_code.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdarg.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdarg.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_assert.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_atomic.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_audio.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_error.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_endian.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mutex.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_thread.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rwops.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_clipboard.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_cpuinfo.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_events.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_video.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_pixels.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rect.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_surface.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_blendmode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keyboard.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keycode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_scancode.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mouse.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_joystick.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gamecontroller.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_quit.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gesture.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_touch.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_filesystem.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_haptic.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_hints.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_loadso.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_log.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_messagebox.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_power.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_render.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_sensor.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_shape.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_system.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_timer.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_version.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h \
+  ../../src/autostart.h ../../src/joyport/bbrtc.h ../../src/cartio.h \
+  ../../src/clkguard.h ../../src/crtc/crtc-mem.h ../../src/crtc/crtc.h \
+  ../../src/datasette.h ../../src/debug.h debugcart.h \
+  ../../src/diskimage.h ../../src/drive/drive-cmdline-options.h \
+  ../../src/drive/drive-resources.h ../../src/drive/drive-snapshot.h \
+  ../../src/drive/drive-sound.h ../../src/drive/drive.h \
+  ../../src/rtc/ds1216e.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/time.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/time.h \
+  ../../src/snapshot.h ../../src/lib/p64/p64.h \
+  ../../src/lib/p64/p64config.h ../../src/lib.h \
+  ../../src/drive/drivetypes.h ../../src/mos6510.h ../../src/r65c02.h \
+  ../../src/fliplist.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdbool.h \
+  ../../src/fsdevice.h ../../src/gfxoutput.h ../../src/iecdrive.h \
+  ../../src/init.h ../../src/joyport/joyport.h \
+  ../../src/joyport/joystick.h ../../src/kbdbuf.h ../../src/keyboard.h \
+  ../../src/log.h ../../src/machine-drive.h ../../src/machine-printer.h \
+  ../../src/machine-video.h ../../src/machine.h ../../src/maincpu.h \
+  ../../src/mem.h ../../src/monitor.h ../../src/monitor/asm.h \
+  ../../src/network.h ../../src/joyport/paperclip64.h \
+  ../../src/parallel.h pet-cmdline-options.h pet-resources.h \
+  pet-snapshot.h pet.h petcolour.h petiec.h petmem.h petreu.h petdww.h \
+  pethre.h pets.h petsound.h ../../src/sound.h ../../src/petui.h \
+  petvia.h petacia.h petpia.h ../../src/printer.h ../../src/resources.h \
+  ../../src/rs232drv/rs232drv.h ../../src/samplerdrv/sampler.h \
+  ../../src/joyport/sampler2bit.h ../../src/joyport/sampler4bit.h \
+  ../../src/screenshot.h ../../src/sid/sid.h \
+  ../../src/sid/sid-cmdline-options.h ../../src/sid/sid-resources.h \
+  ../../src/sidcart.h ../../src/tape.h ../../src/tapeport/tapeport.h \
+  ../../src/traps.h ../../src/userport/userport.h \
+  ../../src/userport/userport_dac.h \
+  ../../src/userport/userport_joystick.h \
+  ../../src/userport/userport_rtc_58321a.h \
+  ../../src/userport/userport_rtc_ds1307.h ../../src/util.h \
+  ../../src/via.h ../../src/vice-event.h ../../src/video.h \
+  ../../src/video/video-sound.h ../../src/viewport.h ../../src/vsync.h \
+  ../../src/joyport/mouse.h
 
 ../../src/vice.h:
 
 ../../src/config.h:
 
-/usr/include/math.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h:
 
-/usr/include/features.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathinline.h:
-
-/usr/include/stdio.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/libio.h:
-
-/usr/include/x86_64-linux-gnu/bits/_G_config.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
-
-/usr/include/x86_64-linux-gnu/bits/sysmacros.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h:
 
 ../../src/attach.h:
 
 ../../src/types.h:
 
-../../src/vice.h:
-
 ../../src/vice_sdl.h:
 
-/usr/include/SDL2/SDL.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL.h:
 
-/usr/include/SDL2/SDL_main.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_main.h:
 
-/usr/include/SDL2/SDL_stdinc.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_stdinc.h:
 
-/usr/include/SDL2/SDL_config.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_config.h:
 
-/usr/include/SDL2/SDL_platform.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_platform.h:
 
-/usr/include/SDL2/begin_code.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/begin_code.h:
 
-/usr/include/SDL2/close_code.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/close_code.h:
 
-/usr/include/string.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h:
 
-/usr/include/strings.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h:
 
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdarg.h:
 
-/usr/include/wchar.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h:
 
-/usr/include/inttypes.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/inttypes.h:
 
-/usr/include/stdint.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h:
 
-/usr/include/ctype.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_assert.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/float.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h:
 
-/usr/include/SDL2/SDL_assert.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h:
 
-/usr/include/SDL2/SDL_atomic.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_atomic.h:
 
-/usr/include/SDL2/SDL_audio.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_audio.h:
 
-/usr/include/SDL2/SDL_error.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_error.h:
 
-/usr/include/SDL2/SDL_endian.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_endian.h:
 
-/usr/include/SDL2/SDL_mutex.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mutex.h:
 
-/usr/include/SDL2/SDL_thread.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_thread.h:
 
-/usr/include/SDL2/SDL_rwops.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rwops.h:
 
-/usr/include/SDL2/SDL_clipboard.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_clipboard.h:
 
-/usr/include/SDL2/SDL_cpuinfo.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_cpuinfo.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/immintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_events.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/mmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_video.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/xmmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_pixels.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/mm_malloc.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_rect.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_surface.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/pmmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_blendmode.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/tmmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keyboard.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/smmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_keycode.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/popcntintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_scancode.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/wmmintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_mouse.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avxintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_joystick.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx2intrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gamecontroller.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512fintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_quit.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512erintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_gesture.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512pfintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_touch.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512cdintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_filesystem.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vlintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_haptic.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512bwintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_hints.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512dqintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_loadso.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vlbwintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_log.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vldqintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_messagebox.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512ifmaintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_power.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512ifmavlintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_render.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vbmiintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_sensor.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vbmivlintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_shape.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx5124fmapsintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_system.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx5124vnniwintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_timer.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/avx512vpopcntdqintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_version.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/shaintrin.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/lzcntintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/bmiintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/bmi2intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/fmaintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/f16cintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/rtmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/xtestintrin.h:
-
-/usr/include/SDL2/SDL_events.h:
-
-/usr/include/SDL2/SDL_video.h:
-
-/usr/include/SDL2/SDL_pixels.h:
-
-/usr/include/SDL2/SDL_rect.h:
-
-/usr/include/SDL2/SDL_surface.h:
-
-/usr/include/SDL2/SDL_blendmode.h:
-
-/usr/include/SDL2/SDL_keyboard.h:
-
-/usr/include/SDL2/SDL_keycode.h:
-
-/usr/include/SDL2/SDL_scancode.h:
-
-/usr/include/SDL2/SDL_mouse.h:
-
-/usr/include/SDL2/SDL_joystick.h:
-
-/usr/include/SDL2/SDL_gamecontroller.h:
-
-/usr/include/SDL2/SDL_quit.h:
-
-/usr/include/SDL2/SDL_gesture.h:
-
-/usr/include/SDL2/SDL_touch.h:
-
-/usr/include/SDL2/SDL_filesystem.h:
-
-/usr/include/SDL2/SDL_haptic.h:
-
-/usr/include/SDL2/SDL_hints.h:
-
-/usr/include/SDL2/SDL_loadso.h:
-
-/usr/include/SDL2/SDL_log.h:
-
-/usr/include/SDL2/SDL_messagebox.h:
-
-/usr/include/SDL2/SDL_power.h:
-
-/usr/include/SDL2/SDL_render.h:
-
-/usr/include/SDL2/SDL_shape.h:
-
-/usr/include/SDL2/SDL_system.h:
-
-/usr/include/SDL2/SDL_timer.h:
-
-/usr/include/SDL2/SDL_version.h:
-
-/usr/include/SDL2/SDL_keycode.h:
-
-/usr/include/SDL2/SDL_opengl.h:
-
-/usr/include/SDL2/SDL_opengl_glext.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h:
 
 ../../src/autostart.h:
 
 ../../src/joyport/bbrtc.h:
-
-../../src/types.h:
 
 ../../src/cartio.h:
 
@@ -550,15 +303,9 @@ debugcart.h:
 
 ../../src/rtc/ds1216e.h:
 
-/usr/include/time.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/time.h:
 
 ../../src/snapshot.h:
 
@@ -568,11 +315,7 @@ debugcart.h:
 
 ../../src/lib.h:
 
-../../src/debug.h:
-
 ../../src/drive/drivetypes.h:
-
-../../src/drive/drive.h:
 
 ../../src/mos6510.h:
 
@@ -580,7 +323,7 @@ debugcart.h:
 
 ../../src/fliplist.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h:
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdbool.h:
 
 ../../src/fsdevice.h:
 
@@ -648,18 +391,6 @@ petsound.h:
 
 ../../src/sound.h:
 
-/usr/include/linux/soundcard.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/linux/patchkey.h:
-
-/usr/include/x86_64-linux-gnu/sys/soundcard.h:
-
 ../../src/petui.h:
 
 petvia.h:
@@ -690,15 +421,11 @@ petpia.h:
 
 ../../src/sidcart.h:
 
-../../src/snapshot.h:
-
 ../../src/tape.h:
 
 ../../src/tapeport/tapeport.h:
 
 ../../src/traps.h:
-
-../../src/mem.h:
 
 ../../src/userport/userport.h:
 

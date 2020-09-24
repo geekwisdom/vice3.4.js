@@ -34,11 +34,13 @@ extern "C" {
 #endif
 
 #include <sys/types.h>
+#define __u_char unsigned char /*!< __u_char as unsigned char */
 
 #ifdef WIN32
   /* we have windows */
 
 #include <windows.h>
+
 
 #ifdef DEFINE_ULONG_PTR
 #define ULONG_PTR ULONG
@@ -52,8 +54,8 @@ extern "C" {
 # endif
 
 
+
 #define CBMAPIDECL __cdecl /*!< On Windows, we need c-type function declarations */
-# define __u_char unsigned char /*!< __u_char as unsigned char */
 # define CBM_FILE HANDLE /*!< The "file descriptor" for an opened driver */
 # define CBM_FILE_INVALID INVALID_HANDLE_VALUE /*!< An invalid "file descriptor" (CBM_FILE) */
 

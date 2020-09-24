@@ -1,7 +1,5 @@
-menu_ethernet.o: menu_ethernet.c /usr/include/stdc-predef.h \
- ../../../src/vice.h ../../../src/config.h
-
-/usr/include/stdc-predef.h:
+menu_ethernet.o: menu_ethernet.c ../../../src/vice.h \
+  ../../../src/config.h
 
 ../../../src/vice.h:
 
