@@ -1085,55 +1085,6 @@ if test x"$check_gtk3" = "xyes"; then
       :
     fi
 
-    dnl enforce OpenGL/GLEW usability unless explicitly disabled
-    if test x"$is_unix_macosx" = "xyes"; then
-      if test x"$enable_hwscale" != "xno"; then
-        if test x"$have_opengl_lib" != "xyes"; then
-          AC_MSG_CHECKING(whether we can use the OpenGL Framework)
-          old_LIBS="$LIBS"
-          LIBS="$LIBS -framework OpenGL"
-          AC_TRY_LINK([#define GL_GLEXT_PROTOTYPES
-                       #include <OpenGL/gl.h>],
-                       [glUniform4f(0,1,2,3,4);],
-                       [AC_MSG_RESULT(yes);
-                        have_opengl_lib=yes],
-                       [AC_MSG_RESULT(no);
-                        LIBS="$old_LIBS"])
-        fi
-        if test x"$have_opengl_lib" != "xyes"; then
-          AC_MSG_ERROR([Cannot find the OpenGL framework. Something is seriously wrong with your build environment.])
-        fi
-        AC_SEARCH_LIBS(glewInit, [GLEW glew32], [have_glew=yes], [have_glew=no])
-        if test x"$have_glew" != "xyes"; then
-          AC_MSG_ERROR([Cannot find the OpenGL Extension Wrangler Library, GLEW. (brew install glew)])
-        fi
-      fi
-    elif test x"$enable_hwscale" != "xno"; then
-      dnl Find where the GL functions live on this system
-      old_clags="$CFLAGS"
-      CFLAGS="$VICE_CFLAGS"
-      AC_SEARCH_LIBS(glViewport, [GL opengl32], [have_opengl_lib=yes], [have_opengl_lib=no])
-      AC_SEARCH_LIBS(glewInit, [GLEW glew32], [have_glew=yes], [have_glew=no])
-
-      if test x"$have_opengl_lib" != "xyes" -o x"$have_glew" != "xyes"; then
-        AC_MSG_CHECKING(whether the opengl32 and glew32 libraries work anyway)
-        old_LIBS="$LIBS"
-        LIBS="$LIBS -lopengl32 -lglew32"
-        AC_TRY_LINK([#include <GL/glew.h>],
-                    [glewInit();],
-                    [AC_MSG_RESULT(yes);
-                     have_opengl_lib=yes;
-                     have_glew=yes],
-                    [AC_MSG_RESULT(no);
-                     LIBS="$old_LIBS"])
-      fi
-
-      CFLAGS="$old_CFLAGS"
-
-      if test x"$have_opengl_lib" != "xyes" -o x"$have_glew" != "xyes"; then
-        AC_MSG_ERROR([Could not find OpenGL and GLEW libraries. GTK3 performance is usually unacceptable without these libraries, but you can insist on software rendering with --disable-hwscale if necessary.])
-      fi
-    fi
 
     dnl Note that even if HAVE_HWSCALE is "no", GTK3's base "Cairo"
     dnl renderer can still do scaling, and even claims to do it in
@@ -1970,33 +1921,6 @@ AC_DECL_SYS_SIGLIST
 dnl ----- Dynamic Lib Loading Support -----
 dynlib_support=no
 DYNLIB_LIBS=
-dnl check for dlopen support on unix and beos/haiku systems
-if test x"$is_unix" = "xyes" -o x"$is_beos" = "xyes"; then
-  AC_CHECK_HEADER(dlfcn.h,,)
-  if test x"$ac_cv_header_dlfcn_h" = "xyes" ; then
-    AC_CHECK_FUNC(dlopen,
-                 [ DYNLIB_LIBS="";
-                   AC_DEFINE(HAVE_DYNLIB_SUPPORT,,
-                             [Support for dynamic library loading.])
-                   dynlib_support=yes;
-                   HAVE_DYNLIB_SUPPORT_TOO="yes"
-                 ])
-    if test x"$dynlib_support" != "xyes" ; then
-      AC_CHECK_LIB(dl, dlopen,
-                 [ DYNLIB_LIBS="-ldl";
-                   AC_DEFINE(HAVE_DYNLIB_SUPPORT,,
-                             [Support for dynamic library loading.])
-                   dynlib_support=yes;
-                   HAVE_DYNLIB_SUPPORT_TOO="yes";
-                   LIBS="-ldl $LIBS"
-                 ],,)
-    fi
-  fi
-elif test x"$is_win32" = "xyes" ; then
-  AC_DEFINE(HAVE_DYNLIB_SUPPORT,,[Support for dynamic library loading.])
-  HAVE_DYNLIB_SUPPORT_TOO="yes"
-fi
-AC_SUBST(DYNLIB_LIBS)
 
 dnl ----- Joystick support -----
 JOY_LIBS=
