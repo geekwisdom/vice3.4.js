@@ -137,9 +137,6 @@
 /* dsound.lib or libdsound.a are present */
 #undef HAVE_DSOUND_LIB
 
-/* Support for dynamic library loading. */
-#undef HAVE_DYNLIB_SUPPORT
-
 /* Define to 1 if you have the <errno.h> header file. */
 #undef HAVE_ERRNO_H
 

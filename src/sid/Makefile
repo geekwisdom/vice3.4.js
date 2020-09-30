@@ -108,7 +108,7 @@ am__v_AR_ = $(am__v_AR_$(AM_DEFAULT_VERBOSITY))
 am__v_AR_0 = @echo "  AR      " $@;
 am__v_AR_1 = 
 libsid_a_AR = $(AR) $(ARFLAGS)
-am__DEPENDENCIES_1 = resid.o
+#am__DEPENDENCIES_1 = resid.o
 libsid_a_DEPENDENCIES = $(am__DEPENDENCIES_1)
 am_libsid_a_OBJECTS = catweaselmkiii.$(OBJEXT) fastsid.$(OBJEXT) \
 	hardsid.$(OBJEXT) parsid.$(OBJEXT) \
@@ -116,7 +116,7 @@ am_libsid_a_OBJECTS = catweaselmkiii.$(OBJEXT) fastsid.$(OBJEXT) \
 	sid-snapshot.$(OBJEXT) sid.$(OBJEXT) ssi2001.$(OBJEXT)
 libsid_a_OBJECTS = $(am_libsid_a_OBJECTS)
 libsid_dtv_a_AR = $(AR) $(ARFLAGS)
-am__DEPENDENCIES_2 = resid-dtv.o
+#am__DEPENDENCIES_2 = resid-dtv.o
 libsid_dtv_a_DEPENDENCIES = $(am__DEPENDENCIES_2)
 am__objects_1 = catweaselmkiii.$(OBJEXT) fastsid.$(OBJEXT) \
 	hardsid.$(OBJEXT) parsid.$(OBJEXT) \
@@ -229,7 +229,6 @@ DEBUGBUILD = 0
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DOS2UNIX = dos2unix
-DYNLIB_LIBS = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -282,7 +281,7 @@ LIBFFMPEGSUB =
 LIBOBJS = 
 LIBS = -lm  -s USE_SDL=2 
 LIBX264SUB = 
-LINKCC = $(CXX)
+LINKCC = $(CC)
 LN_S = ln -s
 LTLIBOBJS = 
 MAKEGUIDE = no
@@ -312,16 +311,16 @@ QUICKTIME_LIBS =
 RANLIB = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emranlib
 READLINE = 
 READLINE_LIBS = 
-RESIDDTVSUB = resid-dtv
-RESIDSUB = resid
-RESID_DEP = libresid
-RESID_DIR = resid
-RESID_DTV_DEP = libresiddtv
-RESID_DTV_DIR = resid-dtv
-RESID_DTV_INCLUDES = -I$(top_builddir)/src/resid-dtv
-RESID_DTV_LIBS = $(top_builddir)/src/resid-dtv/libresiddtv.a
-RESID_INCLUDES = -I$(top_builddir)/src/resid
-RESID_LIBS = $(top_builddir)/src/resid/libresid.a
+RESIDDTVSUB = 
+RESIDSUB = 
+RESID_DEP = 
+RESID_DIR = 
+RESID_DTV_DEP = 
+RESID_DTV_DIR = 
+RESID_DTV_INCLUDES = 
+RESID_DTV_LIBS = 
+RESID_INCLUDES = 
+RESID_LIBS = 
 SDLCONFIG = sdl2-config
 SDL_EXTRA_LIBS = 
 SDL_VERSION = 2
@@ -408,7 +407,7 @@ sdl2_config = sdl2-config
 sdl_config = sdl-config
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/resid src/resid-dtv
+subdirs = 
 sysconfdir = ${prefix}/etc
 target_alias = wasm32-unknown-emscripten
 top_build_prefix = ../../
@@ -422,16 +421,16 @@ xpet_LDFLAGS =
 xplus4_LDFLAGS = 
 xscpu64_LDFLAGS = 
 xvic_LDFLAGS = 
-#resid_libadd = 
-resid_libadd = resid.o
-#resid_dtv_libadd = 
-resid_dtv_libadd = resid-dtv.o
+resid_libadd = 
+#resid_libadd = resid.o
+resid_dtv_libadd = 
+#resid_dtv_libadd = resid-dtv.o
 SUFFIXES = .def
 AM_CPPFLAGS = \
 	 -DNDEBUG \
 	-I$(top_srcdir)/src/arch/sdl -I$(top_srcdir)/src/arch \
-	-I$(top_builddir)/src/resid \
-	-I$(top_builddir)/src/resid-dtv \
+	 \
+	 \
 	-I$(top_builddir)/src \
 	-I$(top_srcdir)/src \
 	-I$(top_srcdir)/src/joyport
@@ -550,18 +549,18 @@ include ./$(DEPDIR)/ssi2001.Po
 #	$(AM_V_CC_no)$(COMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
 .cc.o:
-	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CXX)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ $<
+#	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	$(AM_V_CXX)source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ $<
 
 .cc.obj:
-	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CXX)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	$(AM_V_CXX)source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique

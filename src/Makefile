@@ -117,11 +117,11 @@ am_c1541_OBJECTS = c1541.$(OBJEXT) cbmdos.$(OBJEXT) charset.$(OBJEXT) \
 	rawfile.$(OBJEXT) resources.$(OBJEXT) util.$(OBJEXT) \
 	zfile.$(OBJEXT) zipcode.$(OBJEXT)
 c1541_OBJECTS = $(am_c1541_OBJECTS)
-am__DEPENDENCIES_1 =  \
-	opencbmlib.o \
-	$(top_builddir)/src/arch/shared/dynlib.o
 #am__DEPENDENCIES_1 =  \
-#	opencbmlib.o
+#	opencbmlib.o \
+#	$(top_builddir)/src/arch/shared/dynlib.o
+##am__DEPENDENCIES_1 =  \
+##	opencbmlib.o
 c1541_DEPENDENCIES = $(ARCH_EXTRA_OBJECTS) $(archdep_lib) $(p64_lib) \
 	$(am__DEPENDENCIES_1) $(vdrive_lib) $(imagecontents_lib) \
 	$(fileio_lib) $(diskimage_lib) $(tape_lib) $(serial_lib) \
@@ -432,8 +432,8 @@ CFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstri
 CPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emcc -E
 CPPFLAGS = 
 CROSS = false
-CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -s TOTAL_MEMORY=268435456 -std=c++11
-CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -s TOTAL_MEMORY=268435456 -std=c++11 -E
+CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11
+CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths 
 CYGPATH_W = echo
@@ -441,7 +441,6 @@ DEBUGBUILD = 0
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DOS2UNIX = dos2unix
-DYNLIB_LIBS = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -494,7 +493,7 @@ LIBFFMPEGSUB =
 LIBOBJS = 
 LIBS = -lm  -s USE_SDL=2 
 LIBX264SUB = 
-LINKCC = $(CXX)
+LINKCC = $(CC)
 LN_S = ln -s
 LTLIBOBJS = 
 MAKEGUIDE = no
@@ -524,16 +523,16 @@ QUICKTIME_LIBS =
 RANLIB = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emranlib
 READLINE = 
 READLINE_LIBS = 
-RESIDDTVSUB = resid-dtv
-RESIDSUB = resid
-RESID_DEP = libresid
-RESID_DIR = resid
-RESID_DTV_DEP = libresiddtv
-RESID_DTV_DIR = resid-dtv
-RESID_DTV_INCLUDES = -I$(top_builddir)/src/resid-dtv
-RESID_DTV_LIBS = $(top_builddir)/src/resid-dtv/libresiddtv.a
-RESID_INCLUDES = -I$(top_builddir)/src/resid
-RESID_LIBS = $(top_builddir)/src/resid/libresid.a
+RESIDDTVSUB = 
+RESIDSUB = 
+RESID_DEP = 
+RESID_DIR = 
+RESID_DTV_DEP = 
+RESID_DTV_DIR = 
+RESID_DTV_INCLUDES = 
+RESID_DTV_LIBS = 
+RESID_INCLUDES = 
+RESID_LIBS = 
 SDLCONFIG = sdl2-config
 SDL_EXTRA_LIBS = 
 SDL_VERSION = 2
@@ -620,7 +619,7 @@ sdl2_config = sdl2-config
 sdl_config = sdl-config
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/resid src/resid-dtv
+subdirs = 
 sysconfdir = ${prefix}/etc
 target_alias = wasm32-unknown-emscripten
 top_build_prefix = ../
@@ -637,13 +636,13 @@ xvic_LDFLAGS =
 
 # We have to override the automake default, because we need to use
 # $(CXX) instead of $(CC) when compiling with reSID.
-LINK = $(CXX) -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstrict-prototypes -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Wmacro-redefined -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths $(LDFLAGS) -o $@
-CCLD = $(CXX)
+LINK = $(CC) -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstrict-prototypes -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Wmacro-redefined -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths $(LDFLAGS) -o $@
+CCLD = $(CC)
 AM_CFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstrict-prototypes -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Wmacro-redefined -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths
 AM_CXXFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths
 SUBDIRS = \
-	resid \
-	resid-dtv \
+	 \
+	 \
 	samplerdrv \
 	joyport \
 	sounddrv \
@@ -736,8 +735,8 @@ DIST_SUBDIRS = \
 	plus4 \
 	cbm2 \
 	arch \
-	resid \
-	resid-dtv \
+	 \
+	 \
 	lib \
 	buildtools \
 	hvsc
@@ -1085,8 +1084,8 @@ RESIDDTV_EXTRA_DIST = \
 	resid-dtv/wave.cc \
 	resid-dtv/wave.h
 
-#EXTRA_DIST = $(COMMON_EXTRA_DIST) $(RESID_EXTRA_DIST) $(RESIDDTV_EXTRA_DIST)
-EXTRA_DIST = $(COMMON_EXTRA_DIST)
+EXTRA_DIST = $(COMMON_EXTRA_DIST) $(RESID_EXTRA_DIST) $(RESIDDTV_EXTRA_DIST)
+#EXTRA_DIST = $(COMMON_EXTRA_DIST)
 GENFILES = $(builddir)/geninfocontrib bin2c palette2c
 EMBEDDED_H_FILES = 
 #EMBEDDED_H_FILES = \
@@ -1262,21 +1261,21 @@ vsid_lib = $(top_builddir)/src/c64/libvsid.a
 xcbm2_lib = $(top_builddir)/src/cbm2/libcbm2.a
 xcbm5x0_lib = $(top_builddir)/src/cbm2/libcbm5x0.a
 common_libs = $(top_builddir)/src/arch/sdl/libarch.a  
-resid_libs = $(top_builddir)/src/resid/libresid.a
-resid_dtv_libs = $(top_builddir)/src/resid-dtv/libresiddtv.a
+resid_libs = 
+resid_dtv_libs = 
 ffmpeg_libs = 
 
 # external libraries required for all emulators
-emu_extlibs =         $(top_builddir)/src/arch/sdl/libarch.a $(archdep_lib)
+emu_extlibs =        $(top_builddir)/src/arch/sdl/libarch.a $(archdep_lib)
 driver_libs = $(joyport_lib) $(samplerdrv_lib) $(sounddrv_lib) $(mididrv_lib) $(socketdrv_lib) $(hwsiddrv_lib) $(iodrv_lib) $(gfxoutputdrv_lib) $(printerdrv_lib) $(rs232drv_lib) $(diskimage_lib) $(fsdevice_lib) $(tape_lib) $(fileio_lib) $(serial_lib) $(core_lib)
-realdevice_lib = opencbmlib.o $(top_builddir)/src/arch/shared/dynlib.o
+#realdevice_lib = opencbmlib.o $(top_builddir)/src/arch/shared/dynlib.o
 
 # Bit of a hack to make both Linux and BSD link agains dynlib
 # Someone with a better understand of the differences between Linux and BSD
 # should have a proper look at this issue.
 # -- compyx
-#realdevice_lib = opencbmlib.o
-#realdevice_lib = 
+##realdevice_lib = opencbmlib.o
+realdevice_lib = 
 x64_bin = 
 #x64_bin = x64
 
@@ -1707,7 +1706,7 @@ c1541_LDADD = \
 	$(linenoise_ng_lib) \
 	 \
 	  \
-	 
+	 @DYNLIB_LIBS@
 
 
 # petcat
@@ -2895,7 +2894,7 @@ vic_vice_vpl.h: $(EMBEDDED_DEPENDS) palette2c
 .PHONY: vsid-all
 vsid-all: \
 	$(BUILT_SOURCES) \
-	libresid \
+	 \
 	 \
 	libvsid \
 	libraster \
@@ -2919,7 +2918,7 @@ vsid-all: \
 .PHONY: x64-all
 x64-all: \
 	$(BUILT_SOURCES) \
-	libresid \
+	 \
 	 \
 	libc64 \
 	libc64cartsystem \
@@ -2967,7 +2966,7 @@ x64-all: \
 .PHONY: x64sc-all
 x64sc-all: \
 	$(BUILT_SOURCES) \
-	libresid \
+	 \
 	 \
 	libc64sc \
 	libc64cartsystem \
@@ -3015,7 +3014,7 @@ x64sc-all: \
 .PHONY: x64dtv-all
 x64dtv-all: \
 	$(BUILT_SOURCES) \
-	libresiddtv \
+	 \
 	 \
 	libc64dtv \
 	libc64dtvstubs \
@@ -3102,7 +3101,7 @@ xscpu64-all: \
 	libcore \
 	librtc \
 	libuserport \
-	libresid \
+	 \
 	 \
 	xscpu64$(EXEEXT)
 
@@ -3153,7 +3152,7 @@ x128-all: \
 	librtc \
 	libuserport \
 	libtapeport \
-	libresid \
+	 \
 	 \
 	x128$(EXEEXT)
 
@@ -3199,7 +3198,7 @@ xvic-all: \
 	librtc \
 	libuserport \
 	libtapeport \
-	libresid \
+	 \
 	 \
 	xvic$(EXEEXT)
 
@@ -3241,7 +3240,7 @@ xpet-all: \
 	libuserport \
 	libtapeport \
 	libjoyport \
-	libresid \
+	 \
 	 \
 	xpet$(EXEEXT)
 
@@ -3285,7 +3284,7 @@ xplus4-all: \
 	librtc \
 	libuserport \
 	libtapeport \
-	libresid \
+	 \
 	 \
 	xplus4$(EXEEXT)
 
@@ -3303,7 +3302,7 @@ xcbm2-all: \
 	librs232drv \
 	libarch \
 	libsid \
-	libresid \
+	 \
 	 \
 	libdiag \
 	libdriveiec \
@@ -3347,7 +3346,7 @@ xcbm5x0-all: \
 	librs232drv \
 	libarch \
 	libsid \
-	libresid \
+	 \
 	 \
 	libdiag \
 	libdriveiec \
@@ -3405,7 +3404,7 @@ petcat-all: \
 	libviciivsid libvdc libsid libcrtc libvideo libserial libparallel \
 	libcore libiecbus libfileio librtc libuserport libtapeport libp64 \
 	libscpu64 libdiag \
-	libresid libresiddtv 
+	  
 
 libarch:
 	@(cd arch && $(MAKE))

@@ -79,7 +79,7 @@ sid.o: sid.c ../../src/vice.h ../../src/config.h \
   ../../src/debug.h ../../src/machine.h ../../src/maincpu.h \
   ../../src/parsid.h ../../src/resources.h sid-resources.h \
   ../../src/ssi2001.h ../../src/joyport/mouse.h \
-  ../../src/joyport/lightpen.h resid.h
+  ../../src/joyport/lightpen.h
 
 ../../src/vice.h:
 
@@ -272,5 +272,3 @@ sid-resources.h:
 ../../src/joyport/mouse.h:
 
 ../../src/joyport/lightpen.h:
-
-resid.h:

@@ -73,9 +73,7 @@ dynlib.o: dynlib.c ../../../src/dynlib.h ../../../src/types.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_timer.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_version.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h \
-  archdep_defs.h dynlib-unix.c \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/dlfcn.h
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h
 
 ../../../src/dynlib.h:
 
@@ -234,9 +232,3 @@ dynlib.o: dynlib.c ../../../src/dynlib.h ../../../src/types.h \
 /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl.h:
 
 /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h:
-
-archdep_defs.h:
-
-dynlib-unix.c:
-
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/dlfcn.h:

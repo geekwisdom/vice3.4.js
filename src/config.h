@@ -138,9 +138,6 @@
 /* dsound.lib or libdsound.a are present */
 /* #undef HAVE_DSOUND_LIB */
 
-/* Support for dynamic library loading. */
-#define HAVE_DYNLIB_SUPPORT /**/
-
 /* Define to 1 if you have the <errno.h> header file. */
 #define HAVE_ERRNO_H 1
 
@@ -469,7 +466,7 @@
 /* #undef HAVE_READLINE_READLINE_H */
 
 /* Support for OpenCBM (former CBM4Linux). */
-#define HAVE_REALDEVICE /**/
+/* #undef HAVE_REALDEVICE */
 
 /* Define to 1 if you have the `recv' function. */
 #define HAVE_RECV 1
@@ -478,10 +475,10 @@
 #define HAVE_REGEX_H 1
 
 /* This version provides ReSID support. */
-#define HAVE_RESID /**/
+/* #undef HAVE_RESID */
 
 /* This version provides ReSID-DTV support. */
-#define HAVE_RESID_DTV /**/
+/* #undef HAVE_RESID_DTV */
 
 /* Define to 1 if you have the `rewinddir' function. */
 #define HAVE_REWINDDIR 1
@@ -490,7 +487,7 @@
 /* #undef HAVE_RLNAME */
 
 /* Enable RS232 device emulation. */
-#define HAVE_RS232DEV /**/
+/* #undef HAVE_RS232DEV */
 
 /* Enable RS232 network support */
 #define HAVE_RS232NET /**/

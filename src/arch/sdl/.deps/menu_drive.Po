@@ -86,7 +86,6 @@ menu_drive.o: menu_drive.c ../../../src/vice.h ../../../src/config.h \
   ../../../src/fliplist.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdbool.h \
   ../../../src/machine.h menu_common.h uifonts.h uimenu.h menu_drive.h \
-  ../../../src/opencbmlib.h ../../../src/opencbm.h \
   ../../../src/resources.h ui.h archdep.h ../../../src/sound.h \
   ../../../src/arch/shared/archdep_unix.h ../../../src/archapi.h \
   ../../../src/uiapi.h uifilereq.h uimsgbox.h ../../../src/util.h \
@@ -297,10 +296,6 @@ uifonts.h:
 uimenu.h:
 
 menu_drive.h:
-
-../../../src/opencbmlib.h:
-
-../../../src/opencbm.h:
 
 ../../../src/resources.h:
 

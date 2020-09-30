@@ -195,8 +195,8 @@ CFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wstri
 CPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emcc -E
 CPPFLAGS = 
 CROSS = false
-CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -s TOTAL_MEMORY=268435456 -std=c++11
-CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -s TOTAL_MEMORY=268435456 -std=c++11 -E
+CXX = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11
+CXXCPP = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/em++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O3 -Wall -Wformat -Wformat-pedantic -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -Werror=implicit-function-declaration -Wfatal-errors -fdiagnostics-absolute-paths 
 CYGPATH_W = echo
@@ -204,7 +204,6 @@ DEBUGBUILD = 0
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DOS2UNIX = dos2unix
-DYNLIB_LIBS = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -257,7 +256,7 @@ LIBFFMPEGSUB =
 LIBOBJS = 
 LIBS = -lm  -s USE_SDL=2 
 LIBX264SUB = 
-LINKCC = $(CXX)
+LINKCC = $(CC)
 LN_S = ln -s
 LTLIBOBJS = 
 MAKEGUIDE = no
@@ -287,16 +286,16 @@ QUICKTIME_LIBS =
 RANLIB = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emranlib
 READLINE = 
 READLINE_LIBS = 
-RESIDDTVSUB = resid-dtv
-RESIDSUB = resid
-RESID_DEP = libresid
-RESID_DIR = resid
-RESID_DTV_DEP = libresiddtv
-RESID_DTV_DIR = resid-dtv
-RESID_DTV_INCLUDES = -I$(top_builddir)/src/resid-dtv
-RESID_DTV_LIBS = $(top_builddir)/src/resid-dtv/libresiddtv.a
-RESID_INCLUDES = -I$(top_builddir)/src/resid
-RESID_LIBS = $(top_builddir)/src/resid/libresid.a
+RESIDDTVSUB = 
+RESIDSUB = 
+RESID_DEP = 
+RESID_DIR = 
+RESID_DTV_DEP = 
+RESID_DTV_DIR = 
+RESID_DTV_INCLUDES = 
+RESID_DTV_LIBS = 
+RESID_INCLUDES = 
+RESID_LIBS = 
 SDLCONFIG = sdl2-config
 SDL_EXTRA_LIBS = 
 SDL_VERSION = 2
@@ -383,7 +382,7 @@ sdl2_config = sdl2-config
 sdl_config = sdl-config
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/resid src/resid-dtv
+subdirs = 
 sysconfdir = ${prefix}/etc
 target_alias = wasm32-unknown-emscripten
 top_build_prefix = ../../

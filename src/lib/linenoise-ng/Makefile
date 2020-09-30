@@ -209,7 +209,6 @@ DEBUGBUILD = 0
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DOS2UNIX = dos2unix
-DYNLIB_LIBS = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -262,7 +261,7 @@ LIBFFMPEGSUB =
 LIBOBJS = 
 LIBS = -lm  -s USE_SDL=2 
 LIBX264SUB = 
-LINKCC = $(CXX)
+LINKCC = $(CC)
 LN_S = ln -s
 LTLIBOBJS = 
 MAKEGUIDE = no
@@ -292,16 +291,16 @@ QUICKTIME_LIBS =
 RANLIB = /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/emranlib
 READLINE = 
 READLINE_LIBS = 
-RESIDDTVSUB = resid-dtv
-RESIDSUB = resid
-RESID_DEP = libresid
-RESID_DIR = resid
-RESID_DTV_DEP = libresiddtv
-RESID_DTV_DIR = resid-dtv
-RESID_DTV_INCLUDES = -I$(top_builddir)/src/resid-dtv
-RESID_DTV_LIBS = $(top_builddir)/src/resid-dtv/libresiddtv.a
-RESID_INCLUDES = -I$(top_builddir)/src/resid
-RESID_LIBS = $(top_builddir)/src/resid/libresid.a
+RESIDDTVSUB = 
+RESIDSUB = 
+RESID_DEP = 
+RESID_DIR = 
+RESID_DTV_DEP = 
+RESID_DTV_DIR = 
+RESID_DTV_INCLUDES = 
+RESID_DTV_LIBS = 
+RESID_INCLUDES = 
+RESID_LIBS = 
 SDLCONFIG = sdl2-config
 SDL_EXTRA_LIBS = 
 SDL_VERSION = 2
@@ -388,7 +387,7 @@ sdl2_config = sdl2-config
 sdl_config = sdl-config
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/resid src/resid-dtv
+subdirs = 
 sysconfdir = ${prefix}/etc
 target_alias = wasm32-unknown-emscripten
 top_build_prefix = ../../../
@@ -468,18 +467,18 @@ include ./$(DEPDIR)/linenoise.Po
 include ./$(DEPDIR)/wcwidth.Po
 
 .cpp.o:
-	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CXX)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ $<
+#	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	$(AM_V_CXX)source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ $<
 
 .cpp.obj:
-	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CXX)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	$(AM_V_CXX)source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
