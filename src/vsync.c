@@ -67,6 +67,10 @@ int vsync_frame_counter;
 #include "vsync.h"
 #include "vsyncapi.h"
 
+
+#include <emscripten.h>
+#include <emscripten/html5.h>
+
 /* ------------------------------------------------------------------------- */
 
 static int set_timer_speed(int speed);
@@ -215,6 +219,19 @@ static int timer_speed = 0;
 static int speed_eval_suspended = 1;
 static int sync_reset = 1;
 static CLOCK speed_eval_prev_clk;
+
+void vsync_reset_loop_timing(void)
+{
+    if(warp_mode_enabled || timer_speed >= 115) {
+        log_message(LOG_DEFAULT, "Changing main loop timing to EM_TIMING_SETIMMEDIATE");
+        emscripten_set_main_loop_timing(EM_TIMING_SETIMMEDIATE, 0);
+    } else {
+        log_message(LOG_DEFAULT, "Changing main loop timing to EM_TIMING_SETTIMEOUT");
+        emscripten_set_main_loop_timing(EM_TIMING_SETTIMEOUT, 0);
+    }
+
+}
+
 
 /* Initialize vsync timers and set relative speed of emulation in percent. */
 static int set_timer_speed(int speed)

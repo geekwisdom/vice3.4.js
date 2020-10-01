@@ -34,6 +34,7 @@
 
 #ifdef EMSCRIPTEN
     #include <emscripten.h>
+    #include <vsync.h>
 #endif
 
 #include "vice.h"
@@ -290,7 +291,7 @@ int main_program(int argc, char **argv)
 
 #ifdef EMSCRIPTEN
     emscripten_set_main_loop(maincpu_mainloop, 0, 0);
-   // vsync_reset_loop_timing(); //Not in vice3.4?
+   vsync_reset_loop_timing(); 
 #else
     maincpu_mainloop();
 #endif   

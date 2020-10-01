@@ -63,20 +63,16 @@
 #include <string.h>
 #ifdef EMSCRIPTEN
 #include <emscripten.h>
-#endif
-
-/** Not sure if this is needed or not???
 
 //Oveload the SDL_WaitEvent for javascript version.
-int SDL_WaitEvent(SDL_Event *event)
+int SDL_WaitEvent2(SDL_Event *event)
 {
     while(!SDL_PollEvent(event)) {
         emscripten_sleep(0);
     }
     return 1;
 }
-
-**/
+#endif
 
 int sdl_menu_state = 0;
 
@@ -992,8 +988,11 @@ static int sdl_ui_readline_input(SDLKey *key, SDLMod *mod, Uint16 *c_uni)
                 break;
         }
 #else
+        #ifdef EMSCRIPTEN
+        SDL_WaitEvent2(&e);
+        #else
         SDL_WaitEvent(&e);
-
+        #endif
         switch (e.type) {
             case SDL_KEYDOWN:
                 *key = SDL2x_to_SDL1x_Keys(e.key.keysym.sym);

@@ -1,4 +1,10 @@
-main.o: main.c vice.h config.h \
+main.o: main.c \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h \
+  vsync.h vice.h config.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
@@ -82,6 +88,18 @@ main.o: main.c vice.h config.h \
   ../src/drive/drivetypes.h mos6510.h r65c02.h fullscreen.h gfxoutput.h \
   info.h init.h initcmdline.h log.h machine.h maincpu.h main.h \
   resources.h sysfile.h uiapi.h version.h video.h
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h:
+
+vsync.h:
 
 vice.h:
 

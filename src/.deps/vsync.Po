@@ -78,7 +78,14 @@ vsync.o: vsync.c vice.h config.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL_opengl_glext.h \
   cmdline.h debug.h log.h maincpu.h machine.h \
   ../src/monitor/monitor_network.h uiapi.h network.h resources.h sound.h \
-  vsync.h vsyncapi.h
+  vsync.h vsyncapi.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h
 
 vice.h:
 
@@ -265,3 +272,17 @@ sound.h:
 vsync.h:
 
 vsyncapi.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h:
