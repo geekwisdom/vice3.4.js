@@ -61,6 +61,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef EMSCRIPTEN
+#include <emscripten.h>
+#endif
+
+/** Not sure if this is needed or not???
+
+//Oveload the SDL_WaitEvent for javascript version.
+int SDL_WaitEvent(SDL_Event *event)
+{
+    while(!SDL_PollEvent(event)) {
+        emscripten_sleep(0);
+    }
+    return 1;
+}
+
+**/
 
 int sdl_menu_state = 0;
 
@@ -701,7 +717,24 @@ static ui_menu_retval_t sdl_ui_menu_item_activate(ui_menu_entry_t *item)
     return MENU_RETVAL_DEFAULT;
 }
 
+#ifdef EMSCRIPTEN
+//we need to block the main loop for the menu to load 
+//in javascript
+static void sdl_ui_trap_top(void *data);
+
 static void sdl_ui_trap(uint16_t addr, void *data)
+{
+    emscripten_push_main_loop_blocker(sdl_ui_trap_top, data);
+}
+
+#endif
+
+#ifdef EMSCRIPTEN
+static void sdl_ui_trap_top(void *data)
+#else
+static void sdl_ui_trap(uint16_t addr, void *data)
+#endif
+//Note: 'addr' is not used anyway in this function
 {
     unsigned int width;
     unsigned int height;

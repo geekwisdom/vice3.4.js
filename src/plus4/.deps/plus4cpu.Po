@@ -81,6 +81,7 @@ plus4cpu.o: plus4cpu.c ../../src/vice.h ../../src/config.h \
   ../../src/log.h ../../src/machine.h ../../src/maincpu.h \
   ../../src/monitor.h ../../src/monitor/asm.h ../../src/mos6510.h \
   ../../src/h6809regs.h ../../src/snapshot.h ../../src/traps.h \
+  ../../src/arch/sdl/emscripten/coroutine.h ../../src/vsync.h \
   ../../src/6510core.c
 
 ../../src/vice.h:
@@ -282,5 +283,9 @@ tedtypes.h:
 ../../src/snapshot.h:
 
 ../../src/traps.h:
+
+../../src/arch/sdl/emscripten/coroutine.h:
+
+../../src/vsync.h:
 
 ../../src/6510core.c:

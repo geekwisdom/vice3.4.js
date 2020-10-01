@@ -77,7 +77,12 @@ uipause.o: uipause.c ../../../src/vice.h ../../../src/config.h \
   ../../../src/interrupt.h ../../../src/debug.h ../../../src/types.h \
   ../../../src/log.h ui.h archdep.h ../../../src/sound.h \
   ../../../src/arch/shared/archdep_unix.h ../../../src/archapi.h \
-  ../../../src/uiapi.h uimenu.h ../../../src/vsync.h
+  ../../../src/uiapi.h uimenu.h ../../../src/vsync.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h
 
 ../../../src/vice.h:
 
@@ -256,3 +261,13 @@ archdep.h:
 uimenu.h:
 
 ../../../src/vsync.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h:

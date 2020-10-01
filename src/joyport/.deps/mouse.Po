@@ -7,6 +7,8 @@ mouse.o: mouse.c \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h \
   ../../src/vice.h ../../src/config.h ../../src/alarm.h \
   ../../src/types.h ../../src/vice_sdl.h \
   /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/cache/wasm/include/SDL2/SDL.h \
@@ -95,6 +97,10 @@ mouse.o: mouse.c \
 /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h:
 
 /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h:
 
 ../../src/vice.h:
 

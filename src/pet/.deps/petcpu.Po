@@ -80,7 +80,9 @@ petcpu.o: petcpu.c ../../src/vice.h ../../src/config.h \
   ../../src/arch/shared/archdep_unix.h ../../src/archapi.h \
   ../../src/clkguard.h ../../src/machine.h ../../src/monitor.h \
   ../../src/monitor/asm.h ../../src/mos6510.h ../../src/h6809regs.h \
-  ../../src/snapshot.h ../../src/traps.h ../../src/6510core.c
+  ../../src/snapshot.h ../../src/traps.h \
+  ../../src/arch/sdl/emscripten/coroutine.h ../../src/vsync.h \
+  ../../src/6510core.c
 
 ../../src/vice.h:
 
@@ -281,5 +283,9 @@ pets.h:
 ../../src/snapshot.h:
 
 ../../src/traps.h:
+
+../../src/arch/sdl/emscripten/coroutine.h:
+
+../../src/vsync.h:
 
 ../../src/6510core.c:

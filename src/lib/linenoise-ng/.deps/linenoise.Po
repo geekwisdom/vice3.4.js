@@ -1,279 +1,643 @@
-linenoise.o: linenoise.cpp \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/termios.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/termios.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/unistd.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stddef.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__config \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/pthread.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__nullptr \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdint.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/posix.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdlib.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/math.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/type_traits \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstddef \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/version \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/limits \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__undef_macros \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/ioctl.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/ioctl.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/sys/stat.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/stat.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stat.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cctype \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/ctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/wctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wctype.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdio.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/errno.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/errno.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/errno.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/fcntl.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/fcntl.h \
-  linenoise.h ConvertUTF.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string_view \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__string \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/algorithm \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/initializer_list \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstring \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/utility \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__tuple \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdint \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__debug \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/iosfwd \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/wchar.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/memory \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/typeinfo \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/exception \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdlib \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/new \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/iterator \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__functional_base \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/tuple \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdexcept \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/atomic \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/functional \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/bit \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdio \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cwchar \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cwctype \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/vector \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__bit_reference \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/climits \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/limits.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/limits.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/limits.h \
-  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__split_buffer
+linenoise.o: linenoise.cpp /usr/include/signal.h /usr/include/features.h \
+  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/signum.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/clang/6.0.0/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h /usr/include/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/stdlib.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdlib \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++config.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/os_defines.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/cpu_defines.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+  /usr/include/x86_64-linux-gnu/bits/sysmacros.h /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/std_abs.h \
+  /usr/include/string.h /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cctype \
+  /usr/include/ctype.h /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/libio.h \
+  /usr/include/x86_64-linux-gnu/bits/_G_config.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/clang/6.0.0/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h linenoise.h ConvertUTF.h \
+  /usr/include/clang/6.0.0/include/stdint.h /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/string \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stringfwd.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/memoryfwd.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/char_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_algobase.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/functexcept.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception_defines.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cpp_type_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/type_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/numeric_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_pair.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/move.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/concept_check.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/type_traits \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator_base_types.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator_base_funcs.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/debug/assertions.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/ptr_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/debug/debug.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/predefined_ops.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/postypes.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdint \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/allocator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++allocator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/new_allocator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/new \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/exception \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception_ptr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cxxabi_init_exception.h \
+  /usr/include/clang/6.0.0/include/__stddef_max_align_t.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/typeinfo \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/hash_bytes.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/nested_exception.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/localefwd.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++locale.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/clocale \
+  /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/iosfwd \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/ostream_insert.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cxxabi_forced.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_function.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward/binders.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/range_access.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/initializer_list \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/basic_string.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/atomicity.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/gthr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/atomic_word.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/alloc_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/alloc_traits.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/string_conversions.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdio \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cerrno \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/functional_hash.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/basic_string.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/vector \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_construct.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_uninitialized.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_bvector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/vector.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/memory \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_tempbuf.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_raw_storage_iter.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/concurrence.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/uses_allocator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/unique_ptr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/utility \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_relops.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/tuple \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/array \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/stdexcept \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/invoke.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr_base.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/allocated_ptr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/refwrap.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/aligned_buffer.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr_atomic.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/atomic_base.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/atomic_lockfree_defines.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward/auto_ptr.h
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/signal.h:
+/usr/include/signal.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/features.h:
+/usr/include/features.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+/usr/include/stdc-predef.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/signal.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/termios.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/termios.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/unistd.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/wasi/api.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stddef.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__config:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/pthread.h:
+/usr/include/x86_64-linux-gnu/bits/signum.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stddef.h:
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__nullptr:
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdint.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdint.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/posix.h:
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdlib.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/stdlib.h:
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdlib.h:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/alloca.h:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/math.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/math.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/math.h:
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/type_traits:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstddef:
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/version:
+/usr/include/clang/6.0.0/include/stddef.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/limits:
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__undef_macros:
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string.h:
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/string.h:
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/string.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/strings.h:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/types.h:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/endian.h:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/select.h:
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/ioctl.h:
+/usr/include/termios.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/ioctl.h:
+/usr/include/x86_64-linux-gnu/bits/termios.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/sys/stat.h:
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/sys/stat.h:
+/usr/include/unistd.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stat.h:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cctype:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/wctype.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/stdlib.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wctype.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdlib:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wctype.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++config.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdio.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/os_defines.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/stdio.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/cpu_defines.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/errno.h:
+/usr/include/stdlib.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/errno.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/errno.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/fcntl.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/fcntl.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/std_abs.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/wctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libio.h:
+
+/usr/include/x86_64-linux-gnu/bits/_G_config.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/clang/6.0.0/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/linux/falloc.h:
 
 linenoise.h:
 
 ConvertUTF.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string:
+/usr/include/clang/6.0.0/include/stdint.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/string_view:
+/usr/include/stdint.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__string:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/algorithm:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/initializer_list:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/string:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstring:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stringfwd.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/utility:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/memoryfwd.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__tuple:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/char_traits.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdint:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_algobase.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__debug:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/functexcept.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/iosfwd:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception_defines.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/wchar.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cpp_type_traits.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/compat/wchar.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/type_traits.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/wchar.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/numeric_traits.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/memory:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_pair.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/typeinfo:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/move.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/exception:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/concept_check.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdlib:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/type_traits:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/new:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator_base_types.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/iterator:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator_base_funcs.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__functional_base:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/debug/assertions.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/tuple:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/stdexcept:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/ptr_traits.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/atomic:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/debug/debug.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/functional:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/predefined_ops.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/bit:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/postypes.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cstdio:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cwchar:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cwchar:
+/usr/include/wchar.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/cwctype:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/vector:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdint:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__bit_reference:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/allocator.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/climits:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++allocator.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/limits.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/new_allocator.h:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libc/limits.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/new:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/limits.h:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/exception:
 
-/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/libcxx/__split_buffer:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/exception_ptr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cxxabi_init_exception.h:
+
+/usr/include/clang/6.0.0/include/__stddef_max_align_t.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/typeinfo:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/hash_bytes.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/nested_exception.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/localefwd.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/c++locale.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/iosfwd:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/ostream_insert.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/cxxabi_forced.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_function.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward/binders.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/range_access.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/initializer_list:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/basic_string.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/atomicity.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/gthr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0/bits/atomic_word.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/alloc_traits.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/alloc_traits.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/string_conversions.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cstdio:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/cerrno:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/functional_hash.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/basic_string.tcc:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/vector:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_construct.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_uninitialized.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_bvector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/vector.tcc:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/memory:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_tempbuf.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_raw_storage_iter.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/concurrence.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/uses_allocator.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/unique_ptr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/utility:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_relops.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/tuple:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/array:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/stdexcept:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/invoke.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr_base.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/allocated_ptr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/refwrap.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/ext/aligned_buffer.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/shared_ptr_atomic.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/atomic_base.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/atomic_lockfree_defines.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward/auto_ptr.h:

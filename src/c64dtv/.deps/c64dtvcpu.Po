@@ -81,7 +81,8 @@ c64dtvcpu.o: c64dtvcpu.c ../../src/vice.h ../../src/config.h \
   ../../src/clkguard.h ../../src/debug.h ../../src/interrupt.h \
   ../../src/log.h ../../src/machine.h ../../src/maincpu.h \
   ../../src/mos6510dtv.h ../../src/h6809regs.h ../../src/snapshot.h \
-  ../../src/traps.h ../../src/6510core.c
+  ../../src/traps.h ../../src/arch/sdl/emscripten/coroutine.h \
+  ../../src/vsync.h ../../src/6510core.c
 
 ../../src/vice.h:
 
@@ -286,5 +287,9 @@ c64dtvdma.h:
 ../../src/snapshot.h:
 
 ../../src/traps.h:
+
+../../src/arch/sdl/emscripten/coroutine.h:
+
+../../src/vsync.h:
 
 ../../src/6510core.c:

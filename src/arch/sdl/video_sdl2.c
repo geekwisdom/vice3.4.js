@@ -571,7 +571,8 @@ static int sdl_window_create(const char *title, unsigned int width, unsigned int
         renderlist[it] = lib_strdup(info.name);
     }
     renderlist[it] = NULL;
-
+    //Brad D. hardcoding renderrer to 'software'
+    // set_sdl2_renderer_name("software", "");
     /* Check for resource preferred renderer */
     drv_index = -1;
     if (sdl2_renderer_name != NULL && *sdl2_renderer_name != '\0') {

@@ -78,7 +78,12 @@ vsyncarch.o: vsyncarch.c ../../../src/vice.h ../../../src/config.h joy.h \
   ../../../src/raster/raster.h ui.h archdep.h ../../../src/sound.h \
   ../../../src/arch/shared/archdep_unix.h ../../../src/archapi.h \
   ../../../src/uiapi.h uistatusbar.h videoarch.h ../../../src/viewport.h \
-  ../../../src/video.h vkbd.h vsidui_sdl.h ../../../src/vsyncapi.h
+  ../../../src/video.h vkbd.h vsidui_sdl.h ../../../src/vsyncapi.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h
 
 ../../../src/vice.h:
 
@@ -273,3 +278,13 @@ vkbd.h:
 vsidui_sdl.h:
 
 ../../../src/vsyncapi.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/em_js.h:

@@ -53,6 +53,11 @@
 #include "uimenu.h"
 #include "vkbd.h"
 
+#ifdef EMSCRIPTEN
+#include <emscripten/html5.h>
+#endif
+
+
 #define DEFAULT_JOYSTICK_THRESHOLD 10000
 #define DEFAULT_JOYSTICK_FUZZ      1000
 
@@ -349,6 +354,11 @@ int joy_arch_cmdline_options_init(void)
 
 /* ------------------------------------------------------------------------- */
 
+
+#ifdef EMSCRIPTEN
+static EM_BOOL html5_gamepad_callback(int event_type, const EmscriptenGamepadEvent *event, void *userData);
+#endif
+
 #ifdef HAVE_SDL_NUMJOYSTICKS
 
 /**********************************************************
@@ -373,7 +383,10 @@ int joy_arch_init(void)
 
     if (num_joysticks == 0) {
         log_message(sdljoy_log, "No joysticks found");
-        return 0;
+    #ifdef EMSCRIPTEN
+    emscripten_set_gamepadconnected_callback(NULL, EM_FALSE, html5_gamepad_callback);   
+    #endif
+     return 0;
     }
 
     log_message(sdljoy_log, "%i joysticks found", num_joysticks);
@@ -414,6 +427,14 @@ int joy_arch_init(void)
     SDL_JoystickEventState(SDL_ENABLE);
     return 0;
 }
+
+#ifdef EMSCRIPTEN
+static EM_BOOL html5_gamepad_callback(int event_type, const EmscriptenGamepadEvent *event, void *userData)
+{
+    joy_arch_init();
+    return EM_FALSE;
+}
+#endif
 
 void joystick_close(void)
 {

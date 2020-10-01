@@ -1266,7 +1266,7 @@ resid_dtv_libs =
 ffmpeg_libs = 
 
 # external libraries required for all emulators
-emu_extlibs =        $(top_builddir)/src/arch/sdl/libarch.a $(archdep_lib)
+emu_extlibs =         $(top_builddir)/src/arch/sdl/libarch.a $(archdep_lib)
 driver_libs = $(joyport_lib) $(samplerdrv_lib) $(sounddrv_lib) $(mididrv_lib) $(socketdrv_lib) $(hwsiddrv_lib) $(iodrv_lib) $(gfxoutputdrv_lib) $(printerdrv_lib) $(rs232drv_lib) $(diskimage_lib) $(fsdevice_lib) $(tape_lib) $(fileio_lib) $(serial_lib) $(core_lib)
 #realdevice_lib = opencbmlib.o $(top_builddir)/src/arch/shared/dynlib.o
 
@@ -1706,7 +1706,7 @@ c1541_LDADD = \
 	$(linenoise_ng_lib) \
 	 \
 	  \
-	 @DYNLIB_LIBS@
+	
 
 
 # petcat

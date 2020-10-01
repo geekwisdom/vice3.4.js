@@ -80,7 +80,9 @@ joy.o: joy.c ../../../src/vice.h ../../../src/config.h \
   ../../../src/joyport/joystick.h kbd.h ../../../src/keyboard.h \
   ../../../src/lib.h ../../../src/debug.h ../../../src/log.h \
   ../../../src/resources.h ../../../src/sysfile.h ../../../src/util.h \
-  uihotkey.h vkbd.h
+  uihotkey.h vkbd.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h \
+  /home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h
 
 ../../../src/vice.h:
 
@@ -277,3 +279,7 @@ kbd.h:
 uihotkey.h:
 
 vkbd.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5.h:
+
+/home/adminbrad/prog/vic20/emsdk/upstream/emscripten/system/include/emscripten/html5_webgl.h:

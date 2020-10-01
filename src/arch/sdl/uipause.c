@@ -37,13 +37,24 @@
 #include "uiapi.h"
 #include "uimenu.h"
 #include "vsync.h"
+#ifdef EMSCRIPTEN
+#include <emscripten.h>
+#endif
+
 
 /* ----------------------------------------------------------------- */
 /* ui.h */
 
 static int is_paused = 0;
 
+//for javascript we need to add a main loop blocker
+
+#ifdef EMSCRIPTEN
+static void pause_trap_top(uint16_t addr, void *data)
+	
+#else
 static void pause_trap(uint16_t addr, void *data)
+#endif
 {
     vsync_suspend_speed_eval();
     while (is_paused) {
@@ -53,6 +64,13 @@ static void pause_trap(uint16_t addr, void *data)
 }
 
 
+#ifdef EMSCRIPTEN
+static void pause_trap(uint16_t addr, void *data)
+{
+    emscripten_push_main_loop_blocker(pause_trap_top, data);
+}
+
+#endif
 /** \brief  Get current pause state
  *
  * \return  boolean

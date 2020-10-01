@@ -32,6 +32,10 @@
 
 /* #define DEBUG_MAIN */
 
+#ifdef EMSCRIPTEN
+    #include <emscripten.h>
+#endif
+
 #include "vice.h"
 
 #include <stdio.h>
@@ -283,8 +287,13 @@ int main_program(int argc, char **argv)
 
     /* Let's go...  */
     log_message(LOG_DEFAULT, "Main CPU: starting at ($FFFC).");
-    maincpu_mainloop();
 
+#ifdef EMSCRIPTEN
+    emscripten_set_main_loop(maincpu_mainloop, 0, 0);
+   // vsync_reset_loop_timing(); //Not in vice3.4?
+#else
+    maincpu_mainloop();
+#endif   
     log_error(LOG_DEFAULT, "perkele!");
 
     return 0;
