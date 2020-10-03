@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+</head>
+    <body>
+        <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
+        <canvas  id="canvas" style="border: 0px none;"></canvas>
+        <script type="text/javascript" >
+            var Module = {
+                arguments: ['-sound'],
+                canvas: document.getElementById('canvas'),
+            };
+        </script>
+        <button onclick="loademu();">testing</button>
+        <script type="text/javascript">
+	function loademu()
+		{
+		var script = document.createElement('script');
+		script.src = "./src/xvic.js?dyn="+Date.now();
+document.head.appendChild(script); //or something of the likes
+		}
+	</script>
+
+    </body>
+</html>
+

@@ -45,6 +45,12 @@
 #include "traps.h"
 #include "types.h"
 
+#ifdef EMSCRIPTEN
+    #include "arch/sdl/emscripten/coroutine.h"
+    #include "vsync.h"
+#endif
+
+
 #ifndef EXIT_FAILURE
 #define EXIT_FAILURE 1
 #endif
@@ -389,7 +395,11 @@ void maincpu_mainloop(void)
 {
     /* Notice that using a struct for these would make it a lot slower (at
        least, on gcc 2.7.2.x).  */
-    uint8_t reg_a = 0;
+#ifdef EMSCRIPTEN
+    scrBegin;
+#endif   
+ 
+   uint8_t reg_a = 0;
     uint8_t reg_x = 0;
     uint8_t reg_y = 0;
     uint8_t reg_p = 0;
@@ -411,6 +421,15 @@ void maincpu_mainloop(void)
     machine_trigger_reset(MACHINE_RESET_MODE_SOFT);
 
     while (1) {
+
+#ifdef EMSCRIPTEN    
+        /* Loop until next frame */
+        int startFrame = vsync_frame_counter;
+        while (vsync_frame_counter == startFrame) {
+
+#endif
+
+
 #define CLK maincpu_clk
 #define RMW_FLAG maincpu_rmw_flag
 #define LAST_OPCODE_INFO last_opcode_info
@@ -471,7 +490,16 @@ void maincpu_mainloop(void)
             debug.maincpu_traceflg = 1;
         }
 #endif
+#ifdef EMSCRIPTEN    
+         }
+    scrReturnV;
+
+#endif
+
     }
+#ifdef EMSCRIPTEN    
+    scrFinishV;
+#endif 
 }
 
 /* ------------------------------------------------------------------------- */

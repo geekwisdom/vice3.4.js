@@ -288,14 +288,17 @@ int main_program(int argc, char **argv)
 
     /* Let's go...  */
     log_message(LOG_DEFAULT, "Main CPU: starting at ($FFFC).");
+    log_message(LOG_DEFAULT, "Inside the main.c.");
 
 #ifdef EMSCRIPTEN
+    log_message(LOG_DEFAULT, "Inside the encripten setting the maincpu_mainloop.");
+
     emscripten_set_main_loop(maincpu_mainloop, 0, 0);
    vsync_reset_loop_timing(); 
 #else
     maincpu_mainloop();
 #endif   
-    log_error(LOG_DEFAULT, "perkele!");
+    log_error(LOG_DEFAULT, "Main program has ended - sucessfully");
 
     return 0;
 }

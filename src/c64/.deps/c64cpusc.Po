@@ -82,7 +82,9 @@ c64cpusc.o: c64cpusc.c ../../src/vice.h ../../src/config.h \
   ../../src/clkguard.h ../../src/debug.h ../../src/interrupt.h \
   ../../src/log.h ../../src/machine.h ../../src/mainc64cpu.h \
   ../../src/maincpu.h ../../src/mem.h ../../src/mos6510.h \
-  ../../src/c64/cart/reu.h ../../src/traps.h ../../src/6510dtvcore.c
+  ../../src/c64/cart/reu.h ../../src/traps.h \
+  ../../src/arch/sdl/emscripten/coroutine.h ../../src/vsync.h \
+  ../../src/6510dtvcore.c
 
 ../../src/vice.h:
 
@@ -285,5 +287,9 @@ c64cpusc.o: c64cpusc.c ../../src/vice.h ../../src/config.h \
 ../../src/c64/cart/reu.h:
 
 ../../src/traps.h:
+
+../../src/arch/sdl/emscripten/coroutine.h:
+
+../../src/vsync.h:
 
 ../../src/6510dtvcore.c:

@@ -1706,7 +1706,7 @@ c1541_LDADD = \
 	$(linenoise_ng_lib) \
 	 \
 	  \
-	
+	 
 
 
 # petcat

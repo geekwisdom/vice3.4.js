@@ -2,7 +2,7 @@
 filelist=`find | grep "\.c"`
 for  i in $filelist 
  do
- grep "maincpu_mainloop();" $i
+ grep "${1}" $i
  if [ $? -eq 0 ] ; then 
   echo $i
  fi

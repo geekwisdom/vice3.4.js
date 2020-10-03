@@ -473,14 +473,16 @@ void maincpu_mainloop(void)
 
     machine_trigger_reset(MACHINE_RESET_MODE_SOFT);
 
+
+
     while (1) {
 
 #ifdef EMSCRIPTEN    
         /* Loop until next frame */
         int startFrame = vsync_frame_counter;
         while (vsync_frame_counter == startFrame) {
-#endif
 
+#endif
 
 #define CLK maincpu_clk
 #define RMW_FLAG maincpu_rmw_flag
@@ -547,10 +549,11 @@ void maincpu_mainloop(void)
     scrReturnV;
 
 #endif
+    }
 #ifdef EMSCRIPTEN    
     scrFinishV;
 #endif 
-    }
+
 }
 
 /* ------------------------------------------------------------------------- */
